@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/*cor de fundo do body*/
+.body{
+  background-color: azure;
+   color: rgb(2, 2, 2);
+   
+}
+.nav{
+  background-color: rgba(0, 0, 0, 0.027);
+  max-width: 5000px;   
+  padding: 10px; 
+  box-shadow: 0 4px 10px rgba(0.158, 0.158, 0.158, 0.158);
+
+}
+/*menu de navegação*/
+.nav ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: 69%;
+  
+}
+/*menu de navegação*/
+.nav li a{
+  text-decoration:none;
+   color: rgb(2, 2, 2);
+   font-size: 20px;
+   
+   
+
+}
+/*menu de navegação*/
+.nav li a:hover{
+  text-decoration:none;
+  color: rgba(12, 11, 11, 0.5);
+  
+}
+
+/*titulo topo*/
+.titulo {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 20px;
+  font-family: 15px;
+}
+/*direção da apresentação*/
+.apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 19px; 
+  max-width: 1000px;
+  margin-left: 10%;
+  padding: 20px;
+  font-size: 20px;
+  ;
+}
+/*fonte apresentação*/
+.apresentacao p {
+  flex: 1;
+  line-height: 1.5;
+  
+}
+/*tamanho da foto*/
+.apresentacao img {
+    width: 270px; 
+    height: 270px; 
+    margin-top: 20px;
+  border-radius: 60px ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
+  position: relative;
+  
+}
+/*efeito na foto*/
+.foto:hover {
+  transform: scale(1.13);
+  transition: transform 0.3s ease;
+}
+/*container sobre*/
+.sobre {
+  display: flex;        
+  gap: 20px;            
+  justify-content: space-between; 
+  margin: 20px 0;
+}
+/*estilo conteudo sobre*/
+.Objetivo {
+  flex: 1;              
+  border: 0px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.055);
+}
+.Objetivo:hover{
+  flex: 1;               
+  border: 0px solid #333;
+  border-radius: 10px;
+  padding: 17px;
+  background-color: rgba(0, 0, 0, 0);
+}
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Responsivo para celular apresentaçao*/
+@media (max-width: 600px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apresentacao img {
+    margin-top: 15px;
+  }
+}
+
+/*titulo conhecimentos*/
+.habilidades{
+  font-size: 15px;
+}
+
+/*container meusConhecimentos*/
+#meusConhecimentos{
+  margin-top: 20px;
+  border-top:0px solid #333;
+  border-bottom: 0px solid #333;
+  background-color: rgba(0, 0, 0, 0.055);
+  padding: 10px;
+}
+
+/* Container geral */
+#conhecimentoETecnologias {
+    display: flex;
+    flex-direction: center; 
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 19%;
+}
+
+
+
+
+/* Botões lado a lado */
+#conhecimentoETecnologias .botoes {
+    display: inline-block;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    
+}
+
+/*botoes com espaço entre eles usando ID*/
+#ferramentas, #linguagens, #conhecimentos {
+    margin: 0 16px; 
+    gap: 30px;
+   
+}
+
+/*div da ul*/
+.div{
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Estilo dos botões */
+#conhecimentoETecnologias {
+    display: flex;
+    justify-content: flex-start; /* joga para a esquerda */
+    gap: 40px; /* espaço entre os botões */
+    margin-left: 40px; /* afasta um pouco do título */
+}
+
+#conhecimentoETecnologias .grupo {
+    display: flex;
+    flex-direction: column;    /* botão em cima, lista embaixo */
+    align-items: center;       /* centraliza dentro do grupo */
+    gap: 15px;
+    margin-left: 8%;        /* opcional, centraliza na página */
+    margin-right: 50px;       /* opcional, centraliza na página */
+
+}
+
+/*estilo botton*/
+#conhecimentoETecnologias button {
+    padding: 12px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+    background-color: #0000001f;
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    
+}
+
+
+.conteudoLing,
+.conteudoFerra,
+.conteudoConhe {
+    display: none; /* começa escondido */
+}
+
+/*conteudo ul escondido*/
+.conteudoLing.ativo,
+.conteudoFerra.ativo,
+.conteudoConhe.ativo {
+    display: block;
+    margin-top: 10px;
+}
+
+.conteudoLing ul,
+.conteudoFerra ul,
+.conteudoConhe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#contato{
+  border: #333 solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+  height: 250px;
+}
+
+
+
+/*footer A estilo*/
+.contato a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
