@@ -10,6 +10,8 @@
   max-width: 5000px;   
   padding: 10px; 
   box-shadow: 0 4px 10px rgba(0.158, 0.158, 0.158, 0.158);
+  
+  
 
 }
 /*menu de navegação*/
@@ -17,7 +19,8 @@
   display: flex;
   list-style: none;
   gap: 20px;
-  margin-left: 69%;
+  margin-left: 63%;
+  
   
 }
 /*menu de navegação*/
@@ -228,11 +231,71 @@
     text-align: center;
 }
 
+/*estilo api github*/
+/* Container geral dos projetos */
+#repositorios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+   
+}
+
+/* Estilo do card de cada projeto */
+#repositorios .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+/* Efeito hover do card */
+#repositorios .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Título do projeto */
+#repositorios .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descrição do projeto */
+#repositorios .card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 40px; /* mantém altura uniforme mesmo sem descrição */
+}
+
+/* Link para GitHub */
+#repositorios .card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #24292f; /* cor do GitHub */
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    display: inline-block;
+}
+
+#repositorios .card a:hover {
+    background-color: #444c56;
+}
+
+
 #contato{
   border: #333 solid 1px;
   border-radius: 10px;
   padding: 20px;
-  height: 250px;
+  height: 300px;
 }
 
 
@@ -245,4 +308,24 @@
     font-weight: bold;
     font-size: 1.2em;
     
+}
+
+.bottaoVoltaTopo a{
+    display: inline-block;
+    margin-left: 95%;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-size:30px;
+    width: 50px;
+    height: 80px;
+    color: #000;
+    transition: transform 0.3s, color 0.3s;
+   
+    
+
+}
+
+.bottaoVoltaTopo a:hover{
+    color: rgba(212, 206, 206, 0.5);
+    transform: scale(1.5);
 }
