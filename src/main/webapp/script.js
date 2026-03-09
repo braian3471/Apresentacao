@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     // api github
-    const username = "braian3471"; // coloque seu usuário GitHub
+    const username = "braian3471"; 
     fetch(`https://api.github.com/users/${username}/repos`)
     .then(response => response.json())
     .then(repos => {
